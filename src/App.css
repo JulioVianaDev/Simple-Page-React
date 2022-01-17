@@ -1,0 +1,4 @@
+.duplo{
+    display: grid;
+    grid-template-areas: 'esquerda direita';
+}
