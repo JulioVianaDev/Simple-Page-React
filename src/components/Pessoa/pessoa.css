@@ -1,0 +1,8 @@
+
+.Esquerda{
+    background-image: url('../images/fogos.jpg');
+    background-size: 100%;
+    width:50vw;
+    height:80vh;
+    align-content: center;
+}
