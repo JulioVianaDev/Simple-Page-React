@@ -1,71 +1,49 @@
 import React from "react";
 import styled from "styled-components";
-import react from '../images/react.png';
-const Projetos = () =>{
+import you from '../images/youtube.png';
+import lk from '../images/linkedin.png';
+import git_blue from '../images/github_blue.png';
+let Rodape =()=>{
     return(
         <>
-            <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
-                <a href="#lightbox" data-slide-to="0"/>
-                <img src={react}/> </div>
-                <div class="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
-                <a href="#lightbox" data-slide-to="1"><img src={react}/></a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
-                <a href="#lightbox" data-slide-to="2"><img src={react}/></a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
-                <a href="#lightbox" data-slide-to="3"><img src={react}/></a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
-                <a href="#lightbox" data-slide-to="4"><img src={react}/></a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
-                <a href="#lightbox" data-slide-to="5"><img src={react}/></a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
-                <a href="#lightbox" data-slide-to="6"><img src={react}/></a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
-                <a href="#lightbox" data-slide-to="7"><img src={react}/></a>
-                </div>    
-            </div>
-            </div>
-            <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="Lightbox Gallery by Bootstrap 4" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <div id="lightbox" class="carousel slide" data-ride="carousel" data-interval="5000" data-keyboard="true">
-                                <ol class="carousel-indicators">
-                                    <li data-target="#lightbox" data-slide-to="0"></li>
-                                    <li data-target="#lightbox" data-slide-to="1"></li>
-                                    <li data-target="#lightbox" data-slide-to="2"></li>
-                                    <li data-target="#lightbox" data-slide-to="3"></li>
-                                    <li data-target="#lightbox" data-slide-to="4"></li>
-                                    <li data-target="#lightbox" data-slide-to="5"></li>
-                                    <li data-target="#lightbox" data-slide-to="6"></li>
-                                    <li data-target="#lightbox" data-slide-to="7"></li>
-                                </ol>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active"><img src={react}/></div>
-                                    <div class="carousel-item"><img src={react}/></div>
-                                    <div class="carousel-item"><img src={react}/></div>
-                                    <div class="carousel-item"><img src={react}/></div>
-                                    <div class="carousel-item"><img src={react}/>=""</div>
-                                    <div class="carousel-item"><img src={react}/></div>
-                                    <div class="carousel-item"><img src={react}/></div>
-                                    <div class="carousel-item"><img src={react}/></div>
-                                </div>
-                                <a class="carousel-control-prev" href="#lightbox" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
-                                <a class="carousel-control-next" href="#lightbox" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           <Rodopio> 
+               <p>
+                Midias sociais: 
+                <a href="https://www.youtube.com/channel/UCYW6QT0iGUC1SpgSMFVV1lQ"><Yi src={you}/></a>  
+                <a href="https://www.linkedin.com/in/j%C3%BAlio-viana-408502219/"><Lk src={lk}/></a>
+                <a href="github.com/juliovianadev"><GH src={git_blue}/></a>
+               </p>
+            </Rodopio>
         </>
     )
 }
 
-export default Projetos;
+export default Rodape;
+const Yi = styled.img`
+    width:20px;
+    height:20px;
+`;
+const Lk = styled.img`
+    padding:1px;
+    width:20px;
+    height:20px;
+`;
+const GH = styled.img`
+    padding:1px;
+    width:20px;
+    height:20px;
+`;
+const Rodopio = styled.div`
+    background-color:black;
+    width:50vw;
+    height:11.5vh;
+    text-align:left;
+    padding-left:10px;
+    a{
+        color:white;
+    };
+    p{
+        color:white;
+        padding-top:22px;
+    };
+`;

@@ -22,5 +22,5 @@ export default Navbar;
 const Tomateimg = styled.img`
     width:25vw;
     height:80vh;
-    background-image: url('../images/fogos.jpg')
+    background-image: url('../images/fogos.jpg');
 `;
